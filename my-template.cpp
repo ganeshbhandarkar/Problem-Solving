@@ -1,7 +1,7 @@
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
- * Working on Improving Coding Skills
+ * Working on Improving My Coding Skills
 **/
 
 #include<bits/stdc++.h>
