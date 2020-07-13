@@ -1,3 +1,11 @@
+
+// Problem : A. Add Odd or Subtract Even
+// Contest : Codeforces - Codeforces Round #624 (Div. 3)
+// URL : https://codeforces.com/problemset/problem/1311/A
+// Memory Limit : 256 MB
+// Time Limit : 2000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,6 +41,17 @@ using namespace std;
 
 void solve(){
 
+	tc(){
+		int n,m;cin>>n>>m;
+		int count=0;
+		if((n<m and (n+m)%2==1) or (n>m and (n+m)%2==0)){
+			cout<<1<<endl;
+		}else if((n<m and (n+m)%2==0) or (n>m and (n+m)%2==1)){
+			cout<<2<<endl;
+		}else{
+			cout<<0<<endl;
+		}
+	}
 	
 }
 

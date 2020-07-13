@@ -1,3 +1,11 @@
+
+// Problem : A. Crazy Computer
+// Contest : Codeforces - Codeforces Round #372 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/716/A
+// Memory Limit : 256 MB
+// Time Limit : 2000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,8 +40,24 @@ using namespace std;
 
 
 void solve(){
-
-	
+	// Atleast one word will remain on screen so count = 1 before hand
+	int n,c;
+	cin>>n>>c;
+	int count = 1;
+	vector<int> v;
+	for(int i=0;i<n;i++){
+		int x;cin>>x;
+		v.pb(x);
+	}
+	for(int i=1;i<n;i++){
+		if(v[i]-v[i-1]>c){
+			count=1;
+		}else if(v[i]-v[i-1]<=c){
+			count++;
+		}
+		
+	}
+	cout<<count;
 }
 
 int main(){

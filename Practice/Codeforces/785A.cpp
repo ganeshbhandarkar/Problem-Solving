@@ -1,3 +1,11 @@
+
+// Problem : A. Anton and Polyhedrons
+// Contest : Codeforces - Codeforces Round #404 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/785/A
+// Memory Limit : 256 MB
+// Time Limit : 2000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,20 @@ using namespace std;
 
 void solve(){
 
-	
+	map<string, int> m = {{"Tetrahedron",4},{"Cube",6},{"Octahedron",8},{"Dodecahedron",12},{"Icosahedron",20}};
+	int n;
+	cin>>n;
+	int sum =0;
+	while(n--){
+		string s;
+		cin>>s;		
+		for(auto i : m){
+			if(i.first==s){
+				sum+=i.second;
+			}
+		}
+	}
+	cout<<sum;
 }
 
 int main(){

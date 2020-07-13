@@ -1,3 +1,11 @@
+
+// Problem : A. In Search of an Easy Problem
+// Contest : Codeforces - Technocup 2019 - Elimination Round 1
+// URL : https://codeforces.com/problemset/problem/1030/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,23 @@ using namespace std;
 
 
 void solve(){
-
+	
+	int n;cin>>n;
+	int a[n];
+	int x = 0;
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+		if(a[i]==1){
+			x=1;
+			break;
+		}
+	}
+	if(x==1){
+		cout<<"HARD";
+	}else{
+		cout<<"EASY";
+	}
+	
 	
 }
 

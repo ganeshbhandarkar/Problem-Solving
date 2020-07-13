@@ -1,3 +1,11 @@
+
+// Problem : A. Super Agent
+// Contest : Codeforces - Codeforces Beta Round #12 (Div 2 Only)
+// URL : https://codeforces.com/problemset/problem/12/A
+// Memory Limit : 256 MB
+// Time Limit : 2000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,19 @@ using namespace std;
 
 
 void solve(){
-
+	
+	char a[3][3];
+	for(int i=0;i<3;i++){
+		for(int j=0;j<3;j++){
+			cin>>a[i][j];
+		}	
+	}
+	
+	if(a[0][0]==a[2][2] && a[0][1]==a[2][1] && a[2][0]==a[0][2] && a[1][0]==a[1][2]){
+		cout<<"YES";
+	}else{
+		cout<<"NO";
+	}
 	
 }
 

@@ -1,3 +1,11 @@
+
+// Problem : A. Telephone Number
+// Contest : Codeforces - Educational Codeforces Round 65 (Rated for Div. 2)
+// URL : https://codeforces.com/problemset/problem/1167/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,32 @@ using namespace std;
 
 
 void solve(){
-
+	
+	tc(){
+		int n;cin>>n;
+		string s;cin>>s;
+		int di ;
+		bool flag = false;
+		for(int i=0;i<n;i++){
+			if(s[i]=='8'){
+				flag = true;
+				di = i;
+				break;
+			}
+		}
+		int count;
+		for(int i=di;i<=n;i++){
+			count++;
+		}
+		if(!flag){
+			cout<<"NO"<<endl;continue;
+		}
+		if(count>10){
+			cout<<"YES"<<endl;
+		}else{
+			cout<<"NO"<<endl;
+		}
+	}
 	
 }
 

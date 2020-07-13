@@ -1,3 +1,11 @@
+
+// Problem : A. Grade Allocation
+// Contest : Codeforces - CodeCraft-20 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/1316/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,29 @@ using namespace std;
 
 void solve(){
 
-	
+	tc(){
+		int n,m;
+		cin>>n>>m;
+		int a[n];
+		int sum =0;
+		for(int i=0;i<n;i++){
+			 cin>>a[i];
+			 sum+=a[i];
+			
+		}
+		cout<<min(sum,m)<<endl;
+		// double avg = sum/n;
+		// double curr_avg = 0;
+		// for(int i=1;i<n;i++){
+			// while(a[0]<m && curr_avg<=avg && a[i]>0){
+				// for(int i=0;i<n;i++){
+					// curr_avg+=a[i];
+				// }
+				// a[0]++;a[i]--;
+			// }
+		// }		
+		// cout<<a[0]<<endl;
+	}
 }
 
 int main(){

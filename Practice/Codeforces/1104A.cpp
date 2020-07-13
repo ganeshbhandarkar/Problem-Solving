@@ -1,3 +1,11 @@
+
+// Problem : A. Splitting into digits
+// Contest : Codeforces - Codeforces Round #534 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/1104/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,23 @@ using namespace std;
 
 
 void solve(){
-
+	int n;cin>>n;
+	int ans=INT_MAX;
+	int no;
+	for(int i=1;i<10;i++){
+		if(n/i>0){
+			int ele = n/i;
+			ans = min(ele,ans);
+			no = i;
+		}		
+	}if(n==4){
+		cout<<2<<endl;
+		cout<<2<<" "<<2<<endl;
+	}else{
+		cout<<n<<endl;
+		for(int i=0;i<n;i++) cout<<1<<" ";
+	}
+	
 	
 }
 

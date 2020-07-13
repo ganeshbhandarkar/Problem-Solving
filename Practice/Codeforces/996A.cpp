@@ -1,3 +1,11 @@
+
+// Problem : A. Hit the Lottery
+// Contest : Codeforces - Codeforces Round #492 (Div. 2) [Thanks, uDebug!]
+// URL : https://codeforces.com/problemset/problem/996/A#
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,8 +40,20 @@ using namespace std;
 
 
 void solve(){
-
-	
+	vector<ll>::iterator it;
+	vector<ll> v= {1,5,10,20,100};
+	sort(v.begin(),v.end(),greater<>());
+	ll n;cin>>n;
+	int count=0;
+	for(int i=0;i<5;){
+		if(n>=v[i]){
+			count++;
+			n-=v[i];		
+		}else{
+			i++;
+		}
+	}
+	cout<<count;
 }
 
 int main(){

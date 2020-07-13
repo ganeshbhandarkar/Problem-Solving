@@ -1,3 +1,11 @@
+
+// Problem : A. Mishka and Game
+// Contest : Codeforces - Codeforces Round #365 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/703/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,26 @@ using namespace std;
 
 
 void solve(){
-
+	
+	int n;cin>>n;
+	int a,b,ap=0,bp=0;
+	for(int i=0;i<n;i++){
+		cin>>a>>b;
+		if(a>b){
+			ap++;
+		}else if(b>a){
+			bp++;
+		}else if(a==b){
+			ap++;bp++;
+		}
+	}
+	if(ap>bp){
+		cout<<"Mishka";
+	}else if(bp>ap){
+		cout<<"Chris";
+	}else{
+		cout<<"Friendship is magic!^^";
+	}
 	
 }
 

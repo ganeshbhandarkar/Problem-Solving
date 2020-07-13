@@ -1,3 +1,11 @@
+
+// Problem : A. Love "A"
+// Contest : Codeforces - Forethought Future Cup - Elimination Round
+// URL : https://codeforces.com/problemset/problem/1146/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,8 +40,17 @@ using namespace std;
 
 
 void solve(){
-
-	
+	string s;cin>>s;int count=0;
+	for(int i=0;i<(int)s.length();i++){
+		if(s[i]=='a'){
+			count++;
+		}
+	}
+	if(count>((int)s.length()/2)){
+		cout<<s.length();
+	}else{
+		cout<<(2*count)-1;
+	}	
 }
 
 int main(){

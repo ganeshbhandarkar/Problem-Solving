@@ -1,3 +1,11 @@
+
+// Problem : A. Coins
+// Contest : Codeforces - Codeforces Round #523 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/1061/A
+// Memory Limit : 256 MB
+// Time Limit : 2000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,17 @@ using namespace std;
 
 
 void solve(){
-
+	int n,S;
+	cin>>n>>S;
+	int count = 0;
+	while(S>0){
+		S-=n;
+		count++;
+		if(S<=0){
+			cout<<count;
+			break;
+		}
+	}
 	
 }
 

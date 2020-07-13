@@ -1,3 +1,11 @@
+
+// Problem : A. Sum of Round Numbers
+// Contest : Codeforces - Codeforces Round #640 (Div. 4)
+// URL : https://codeforces.com/problemset/problem/1352/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -31,13 +39,34 @@ using namespace std;
 #define FI ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 
 
-void solve(){
 
-	
+void solve(){
+	vector<int> v;
+	int n;cin>>n;
+	int rem;
+	int x = 0;
+	int ch = 1;
+	while(n>0){
+		rem = n%10;
+		if(rem>0){			
+			rem*= ch;
+			v.pb(rem);
+		}
+		n/=10;
+		x++;
+		ch = ch*10;
+	}
+	cout<<v.size()<<endl;
+	for(int i=0;i<v.size();i++){
+		cout<<v[i]<<" ";
+	}
+	cout<<endl;
 }
 
 int main(){
 	FI;
-	solve();
+	tc(){
+		solve();
+	}
 	return 0;
 }

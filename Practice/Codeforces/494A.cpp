@@ -1,3 +1,11 @@
+
+// Problem : A. Polycarp's Pockets
+// Contest : Codeforces - Codeforces Round #494 (Div. 3)
+// URL : https://codeforces.com/problemset/problem/1003/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,20 @@ using namespace std;
 
 void solve(){
 
-	
+	int n;cin>>n;
+	int a[n];
+	mii m;
+	for(int i=0;i<n;i++){
+		cin>>a[i];
+		m[a[i]]++;
+	}
+	int max = INT_MIN;
+	for(auto i : m){
+		if(max < i.second){
+			max = i.second;
+		}
+	}
+	cout<<max;
 }
 
 int main(){

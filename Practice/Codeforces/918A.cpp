@@ -1,3 +1,11 @@
+
+// Problem : A. Eleven
+// Contest : Codeforces - Codeforces Round #459 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/918/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,27 @@ using namespace std;
 
 void solve(){
 
-	
+	int n;cin>>n;
+	map<int,int> m;
+	vector<int> dp;
+	dp.pb(1);dp.pb(1);
+	string s = "";
+	int num = 2;
+	while(num<=1000){
+		dp.pb(num);
+		num = dp.at(dp.size()-1)+dp.at(dp.size()-2);
+	}	
+	std::vector<int>::iterator it; 
+	for(int i=0;i<n;i++){
+		it = std::find(dp.begin(), dp.end(), i+1);
+		if(it!=dp.end()){
+			s = s + 'O';
+		}else{
+			s = s + 'o';
+		}
+	}
+	cout<<s;
+			
 }
 
 int main(){

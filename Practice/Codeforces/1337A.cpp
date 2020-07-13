@@ -1,3 +1,11 @@
+
+// Problem : A. Ichihime and Triangle
+// Contest : Codeforces - Codeforces Round #635 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/1337/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,11 @@ using namespace std;
 
 void solve(){
 
-	
+	tc(){
+		ll a,b,c,d;
+		cin>>a>>b>>c>>d;
+		cout<<b<<" "<<c<<" "<<c<<endl;
+	}
 }
 
 int main(){

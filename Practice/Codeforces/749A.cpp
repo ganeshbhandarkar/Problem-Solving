@@ -1,3 +1,11 @@
+
+// Problem : A. Bachgold Problem
+// Contest : Codeforces - Codeforces Round #388 (Div. 2)
+// URL : https://codeforces.com/problemset/problem/749/A
+// Memory Limit : 256 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -32,7 +40,41 @@ using namespace std;
 
 
 void solve(){
-
+	
+	int n;
+	cin>>n;
+	// int count=0;
+	// int seive[n];
+	// clr(seive);
+	// seive[0]=seive[1]=1;
+	// seive[2]=0;
+	// for(int i=2;i<=n;i++){
+		// for(int j=i*i;j<=n;j+=i){
+			// if(seive[j]==0){
+				// seive[j]=1;
+			// }
+		// }
+	// }
+	// for(int i=0;i<=n;i++){
+		// if(seive[i]==0){
+			// count++;
+		// }
+	// }
+	vector<ll> v;
+	while(n>0){
+		if(n%2==1){
+			n-=3;
+			v.pb(3);
+		}else{
+			n-=2;
+			v.pb(2);
+		}		
+	}
+	cout<<v.size()<<endl;
+	for(auto i:v){
+		cout<<i<<" ";
+	}
+	
 	
 }
 

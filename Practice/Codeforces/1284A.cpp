@@ -1,3 +1,11 @@
+
+// Problem : A. New Year and Naming
+// Contest : Codeforces - Hello 2020
+// URL : https://codeforces.com/problemset/problem/1284/A
+// Memory Limit : 1024 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
 /* 
  * My Solutions Repository at https://github.com/ganeshbhandarkar/Problem-Solving
  * Author: Ganesh Bhandarkar
@@ -33,7 +41,21 @@ using namespace std;
 
 void solve(){
 
-	
+	int n,m;cin>>n>>m;
+	vector<string> s(n),s1(m);
+	for(int i=0;i<n;i++){
+		cin>>s[i];
+	}
+	for(int i=0;i<m;i++){
+		cin>>s1[i];
+	}
+	int x;cin>>x;
+	while(x--){
+		ll y;cin>>y;
+		int j = (y-1)%n;
+		int k = (y-1)%m;
+		cout<<s[j]+s1[k]<<endl;
+	}
 }
 
 int main(){
