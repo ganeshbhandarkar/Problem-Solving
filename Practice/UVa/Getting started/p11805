@@ -1,0 +1,50 @@
+
+// Problem : 11805 - Bafana Bafana
+// Contest : UVa Online Judge
+// URL : https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=24&page=show_problem&problem=2905
+// Memory Limit : 32 MB
+// Time Limit : 1000 ms
+// Powered by CP Editor (https://github.com/cpeditor/cpeditor)
+
+/*
+* 		Author: gbgb1bgbg
+**/
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+	int t;cin>>t;
+	int c=1;
+	while(t--){
+		int n,k,p;
+		cin>>n>>k>>p;
+		while(p>0){
+			if(k<n){
+				k++;
+				p--;
+			}else{
+				k=1;
+				p--;
+			}
+		}
+		cout<<"Case"<<" "<<c<<": "<<k<<endl;c++;
+	}
+	
+	return 0;
+}
+
+while(T--)
+	{
+		int N,K,P;
+		cin>>N>>K>>P;
+		if((K+P)%N==0)
+			{
+			printf("Case %d: %d\n",i++,N);
+			continue;
+			}
+		printf("Case %d: %d\n",i++,(K+P)%N);
+	}

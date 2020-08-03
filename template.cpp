@@ -1,5 +1,5 @@
 /*
-* 		author: gbgb1bgbg
+* 		Author: gbgb1bgbg
 **/
 
 #include<bits/stdc++.h>
